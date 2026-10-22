@@ -31,8 +31,8 @@ def build_graph(system):
     graph = nx.DiGraph()
     graph.add_nodes_from(system["modules"])
     graph.add_nodes_from(system["external"])
-    for source, target, description in system["links"]:
-        graph.add_edge(source, target)   # опис зв'язку потрібен лише для звіту
+    for source, target, _description in system["links"]:
+        graph.add_edge(source, target)   # опис зв'язку в графі не потрібен
     return graph
 
 
@@ -165,4 +165,5 @@ def main():
         file.write(report)
 
 
-main()
+if __name__ == "__main__":
+    main()

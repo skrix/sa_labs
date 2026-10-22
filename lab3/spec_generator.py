@@ -135,4 +135,5 @@ def main():
         file.write(report)
 
 
-main()
+if __name__ == "__main__":
+    main()
