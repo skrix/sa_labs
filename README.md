@@ -6,7 +6,7 @@
 
 - `lab1/` — Практична робота №1. Аналіз предметної області (читає `system.json`, будує граф зв'язків, формує звіт).
 - `lab2/` — Практична робота №2. Побудова моделі системи (мережева модель процесу, метод Сааті, математична модель навантаження).
-- `lab3/` — TBD
+- `lab3/` — Практична робота №3. Автоматизоване формування технічної специфікації (з `spec_input.json` у `technical_specification.md`).
 
 ## lab1: запуск
 
@@ -31,3 +31,13 @@ python model_analysis.py
 ```
 
 Результат: `report.txt`, `process_network.png`, `saaty_weights.png`, `module_load.png`.
+
+## lab3: запуск
+
+```bash
+cd lab3
+python3 spec_generator.py
+```
+
+Залежностей немає (лише стандартна бібліотека) — venv не потрібен.
+Результат: `report.txt` та `technical_specification.md`.
